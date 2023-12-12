@@ -159,11 +159,15 @@ button:hover {
 }
 
 footer p {
-  margin-top: -5rem;
+  margin-top: -8rem;
   color: #fff;
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    min-height: 80vh;
+  }
+
   main {
     width: 100%;
     padding: 2rem 2rem;
@@ -195,5 +199,6 @@ footer p {
   }
   footer p {
     font-size: 1.4rem;
+    margin-top: -5rem;
   }
 }
