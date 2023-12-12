@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  min-height: 100vh;
+  animation: mygradient 15s ease infinite;
+}
+
+@keyframes mygradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+main {
+  background: #fff;
+  text-align: center;
+  width: min(42.8rem, 90%);
+  padding: 4.8rem 6.4rem 6.4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
+  margin-top: -12rem;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.4rem;
+}
+
+p,
+button {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+p {
+  margin-bottom: 2.6rem;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotate(-5deg); }
+  50% { transform: translateX(5px) rotate(5deg); }
+  75% { transform: translateX(-5px) rotate(-5deg); }
+  100% { transform: translateX(0); }
+}
+
+button:hover {
+  animation: shake 0.4s ease-in-out infinite;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes emergeFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.boxMsg {
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+  padding: 1rem 1rem;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.4rem;
+  margin-bottom: 5rem;
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  opacity: 0; 
+  animation-fill-mode: forwards; 
+}
+
+.boxMsg:not(.hide) {
+  animation: emergeFromBottom 1.5s ease-in-out forwards;
+}
+
+#btnReset {
+  margin-top: 5.9rem;
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+  background: #ff9500;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+#btnReset:hover {
+  background: #ffa500;
+  transition: background 0.3s;
+  animation: none;
+}
