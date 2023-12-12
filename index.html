@@ -10,23 +10,44 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <main>
-    <div class="screenOne ">
-      <h1>Qual é a sua sorte de hoje?</h1>
-      <p>Abra o biscoito e descubra</p>
-      <button id="closeCookie" >
+  <div class="items">
+    <main>
+      <div class="screenOne ">
+        <h1>Qual é a sua sorte de hoje?</h1>
+        <p>Abra o biscoito e descubra</p>
+        <button id="closeCookie" >
         <img src="./assets/closet-cookie.svg" alt="Desenho de um biscoito da sorte fechado">
-      </button>
-    </div>          
-    <div class="screenTwo hide">
-      <h1>Aqui está a sua sorte de hoje:</h1>
-      <div class="fortuneCookie">
-        <p class="boxMsg"></p>
-        <img src="./assets/opened-cookie.png" alt="Desenho de um biscoito da sorte aberto">
+        </button>
+      </div>          
+      <div class="screenTwo hide">
+        <h1>Aqui está a sua sorte de hoje:</h1>
+        <div class="fortuneCookie">
+          <p class="boxMsg"></p>
+          <img src="./assets/opened-cookie.png" alt="Desenho de um biscoito da sorte aberto">
+        </div>
+        <button id="btnReset">Abrir outro biscoito</button>
+      </div>         
+    </main>
+      <div class="social">
+        <h5>SOCIAL</h5>
+        <div class="socialIcons">
+          <div class="github">
+            <a href="https://github.com/JLisarte" target="_blank">
+              <img src="./assets/logo-github.svg" width="30px" alt="Icone do gitHub" >
+            </a>
+          </div>
+          <div class="linkedin">
+            <a href="https://www.linkedin.com/in/juliano-lisarte-983ab3266/" target="_blank">
+              <img src="./assets/logo-linkedin.svg" width="30px" alt="Icone do linkedin">
+            </a>
+          </div>
+        </div>
       </div>
-      <button id="btnReset">Abrir outro biscoito</button>
-    </div>          
-  </main>
+    </div>
+  <footer>
+    <p>© 2023 - Desenvolvido por Juliano Lisarte</p>
+  </footer>
 </body>
 <script type="module" src="./main.js"></script>
+
 </html>
